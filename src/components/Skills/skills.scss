@@ -1,0 +1,16 @@
+.skills {
+    span {
+        display: block;
+    }
+}
+
+.skills-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    padding-bottom: 30px;
+
+    .icon {
+        color: var(--blue);
+    }
+}

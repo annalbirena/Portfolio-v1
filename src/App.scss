@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+
+//Breakpoints
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+
+/* Variables */
+:root {
+    --black: #4F4F4F;
+    --blue: #1B98E0;
+    --blue-transparent: #1b98e034;
+    --background: #F9F9F9;
+}
+
+[data-theme="dark"]{
+    --black: white;
+    --blue: red;
+    --background: #36363c;
+}
+
+/* Globals */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+.App {
+    margin: 0;
+    padding: 0 50px;
+    box-sizing: border-box;
+    background-color: var(--background);
+    color: var(--black);
+    transition: all 0.8s ease;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 45px 0;
+}
+
+.menu-icon {
+    width: 25px;
+    height: 30px;
+}
+
+/* WELCOME */
+
+h1 {
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.welcome {
+    padding: 90px 0;
+    font-size: 2rem;
+}
+
+.welcome span {
+    color: var(--blue);
+    font-weight: 600;
+}
+
+.welcome p {
+    line-height: 3.5rem;
+    margin-bottom: 40px;
+}
+
+.btn {
+    height: 70px;
+    width: 220px;
+    border: 3px solid var(--blue);
+    border-radius: 7px;
+    background-color: var(--blue-transparent);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.btn:hover {
+    background-color: transparent;
+}
+
+/* ABOUT ME */
+
+.section {
+    margin: 60px 0;
+}
+
+h2 {
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+    color: var(--blue);
+}
+
+.aboutme p{
+    font-size: 14px;
+    line-height: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+.aboutme span {
+    font-weight: 600;
+}
+
+/* SKILLS */
+.icon {
+    height: 12px;
+    width: 14px;
+}
